@@ -1,0 +1,19 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    text-align: center;
+    padding:200px 0;
+}
+
