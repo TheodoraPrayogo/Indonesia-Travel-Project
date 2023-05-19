@@ -2,23 +2,35 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.grid {
+  display: grid;
+  grid-gap: 50px;
+}
+
+section {
+  max-width: 1200px;
+  margin:0 auto;
+  padding:100px 0;
+}
+
 /* Hero */
 .container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("../images/landscape.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:white;
-    text-align: center;
-    padding:200px 0;
+  url("../images/landscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 200px 0;
 }
 
-header h3{
+header h3 {
   font-size: 24px;
   line-height: 1.5;
   letter-spacing: 5px;
@@ -29,17 +41,17 @@ header h1 {
   line-height: 1;
 }
 
-header h2{
+header h2 {
   font-size: 40px;
   font-weight: 400;
 }
 
 header a {
-  font-size:14px;
-  line-height:1.5;
+  font-size: 14px;
+  line-height: 1.5;
   color: black;
   margin-top: 32px;
-  padding:16px 32px;
+  padding: 16px 32px;
   display: inline-block;
   letter-spacing: 3px;
   text-decoration: none;
@@ -47,69 +59,120 @@ header a {
   background: white;
 }
 
-/* Footer */
+/* Main Section Why Indonesia */
 
-.grid{
-  display:grid;
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-gap:50px;
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
 }
 
-section{
-  max-width:1200px;
-  margin:0 auto;
+.img-responsive {
+  max-width: 100%;
+}
 
+main{
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
+}
+
+/* Footer */
+
+
+.grid-3-columns {
+  grid-template-columns: 2fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 footer {
-  background-image:linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
-  url("../images/monas.jpg");
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("../images/monas.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color:white;
-  padding:100px 20px;
+  color: white;
+  padding: 100px 20px;
 }
 
-footer p{
+footer p {
   font-size: 16px;
-  opacity:0.7;
-  margin-right:20px;
+  opacity: 0.7;
+  margin-right: 20px;
   line-height: 24px;
 }
 
 footer a {
-  color:white;
+  color: white;
   opacity: 0.7;
   cursor: pointer;
   line-height: 24px;
- 
 }
 
-footer ul{
-  padding:0;
+footer ul {
+  padding: 0;
 }
 
-footer li{
+footer li {
   list-style: none;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 
-@media (max-width:960px){
+@media (max-width: 960px) {
   header {
-    padding:60px 0;
+    padding: 60px 0;
   }
-  
+
   header h1 {
-    font-size:48px;
+    font-size: 48px;
   }
-  
+
   header h2 {
     font-size: 20px;
   }
 
   header h3 {
     font-size: 12px;
-
   }
+
+ .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
 }
