@@ -47,7 +47,23 @@ header a {
   background: white;
 }
 
-@media (max-width:900px){
+/* Footer */
+
+footer {
+  background-image:linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),
+  url("../images/monas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  padding:100px 20px;
+}
+
+footer a {
+  color:white;
+  cursor: pointer;
+}
+
+@media (max-width:960px){
   header {
     padding:60px 0;
   }
